@@ -13,7 +13,7 @@ to an API POST endpoint in JSON format.
 
 Clone the repo:
 
-```git clone ```
+```git clone https://github.com/pa4159/csv-app.git```
 
 ## Build
 
@@ -27,7 +27,7 @@ Skip tests:
 
 Spin up a PostgresDB container using `docker compose up`. You can then start the Spring Boot app to test your changes:
 
-```mvn spring-boot:run````
+```mvn spring-boot:run```
 
 By default, this reads data on start-up from: /src/main/resources/customers.csv.
 
