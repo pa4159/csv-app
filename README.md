@@ -38,3 +38,12 @@ Create a new customer:
 
 Get a customer by reference:
 ```GET /customer/:customerReference```
+
+-- End of regular README --
+
+## Approach/Thoughts
+
+- Standard CRUD app using Spring Boot for ease of development (or technically just a CR app, in this case).
+- Jackson Data Format CSV used to facilitate converting rows to POJOs. I did pause on this as the use of "loop" in the instructions made me wonder if you were after a manual implementation. I opted for simplicity as it's what I'd do at work, unless there were good reasons to avoid external dependencies, e.g. trying to reduce bloat.
+- Honestly, my TDD was not the best on this application, mainly because it's very simple and most classes are lightweight.
+- I got a bit carried away and added a testcontainers test, as I love the library and it saves you having to spin up the docker compose (if you'd like to run this).
